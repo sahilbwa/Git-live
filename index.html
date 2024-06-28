@@ -6,13 +6,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Brand</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+   
     <style>
+
+
         *{
             padding: 0%;
             margin: 0;
             box-sizing: border-box;
           
         }
+        @keyframes textload {
+            from{
+                transform: scale(1.8);
+
+            }
+            to{
+                transform: scale(1.2);
+            }
+            
+            
+        }
+        @keyframes sidetext {
+            from{
+                transform: translateX(-10%);
+                color: transparent;
+            }
+            
+        }
+        @keyframes imageload{
+            0%{
+                height: 0%;
+            }
+            100%{
+                height: 110%;
+            }
+        }
+        /* @keyframes imageload {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+        @keyframes buttonload {
+         from{
+                transform:translateX(-60px) ;
+                color: rgb(189, 202, 207) ;
+            }
+            to{
+                transform:translateX(0px) ;
+            }
+            
+        }
+        @keyframes text2load{
+            from{
+                transform: translateX(-60px);
+                opacity: 9;
+                color: transparent;
+            }
+        }
+        @keyframes text3load{
+            from{
+                transform: translateX(-60px);
+                color: transparent;
+            }
+        }
+        @keyframes text4load {
+            from{
+                transform: translateX(-60px);
+                color: transparent;
+            }
+            
+        }
+        @keyframes navload {
+            from{
+                transform: translateY(-80px);
+            }
+            
+        }
+
         body{
             background-color:rgb(189, 202, 207);
             font-family: 'Roboto', sans-serif;
@@ -23,6 +99,7 @@
             display: flex;
             justify-content: space-between;
             margin:0px 10px;
+            animation: navload 1s linear 2.8s;
             
         }
         .content{
@@ -44,6 +121,7 @@
             margin-right: 200px;
             position: relative;
             bottom: 50px;
+            animation: imageload 1s forwards 1s;
           
         }
         .upper{
@@ -58,7 +136,7 @@
             font-weight: 1000;
             margin-left: 200px;
             z-index: 1;
-        
+            animation:textload 0.2s linear;
 
         }
         .p1{
@@ -68,12 +146,16 @@
             margin-left: 130px;
             font-weight: 800;
             color: rgb(88, 102, 102);
+            animation: sidetext 0.6s linear 0.3s;
+
         }
         .buttons{
             /* border: solid red; */
             margin-left: 240px;
             margin-top: 100px;
             color: red;
+            animation: buttonload 0.4s linear 1.2s;
+
         }
         .about{
             color: black;
@@ -84,19 +166,22 @@
              font-size: 50px;
              width: 400px;
             margin-left: 240px;
+            animation: text2load 0.6s linear 1.6s;
+
         }
         .text3{
             /* border: solid red; */
             width: 300px;
             margin-left: 220px;
             font-weight: 600;
+            animation: text3load 0.6s linear 2s;
         }
         .text4{
             /* border: solid red; */
             margin-left: 220px;
             margin-top: 10px;
             width: 500px;
-
+            animation: text4load 0.6s linear 2.4s;
         }
         .t1{
             /* border: solid red; */
@@ -174,6 +259,7 @@
                 SUBSCRIBE FOR OUR NEWS/EVENTS</div>
            <div class="text6"><U>SCROLL FOR ALL SERVICES</U></div>
     </div>
+    
 
     
 
